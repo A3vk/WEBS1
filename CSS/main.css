@@ -1,2 +1,56 @@
-/* Custom font: font-family: 'Cinzel Decorative', cursive; */
+/* Custom font: font-family: 'Cinzel Decorative', cursive; / font-family: 'Open Sans', sans-serif; */
 /* SVG Convert: https://www.aconvert.com/image/png-to-svg/ */
+body {
+    margin: 0;
+    background-color: black;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#submenu, #sub-submenu {
+    flex-direction: column;
+    visibility: hidden;
+    height: 0;
+}
+
+#sub-submenu {
+    /* float: */
+}
+
+li:hover ul#submenu {
+    visibility: visible;
+    height: auto;
+}
+
+#submenu li:hover ul#sub-submenu {
+    visibility: visible;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: gold;
+}
+
