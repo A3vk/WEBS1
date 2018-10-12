@@ -39,12 +39,16 @@ nav {
     width: 100%;
     visibility: hidden;
     height: 0;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 #submenu, #sub-submenu {
     margin-left: 50px;
     visibility: hidden;
     height: 0;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 nav a {
@@ -55,11 +59,13 @@ nav a {
 
 #menu_checkbox:checked ~ nav {
     visibility: visible;
+    opacity: 1;
     height: auto;
 }
 
 #menu_checkbox:checked ~ nav #submenu_checkbox:checked ~ ul, #menu_checkbox:checked ~ nav #submenu_checkbox:checked ~ ul #sub-submenu_checkbox:checked ~ ul {
     visibility: visible;
+    opacity: 1;
     height: auto;
 }
 
