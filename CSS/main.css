@@ -18,39 +18,51 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-nav {
-    width: 50%;
-    margin: 0 auto;
-}
-
-nav ul {
-    list-style: none;
+header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
 }
 
-#submenu, #sub-submenu {
-    flex-direction: column;
+.logo a img {
+    width: 10vw; 
+    height: 10vw;
+}
+
+.menu_icon {
+    color: gold;
+    font-size: 10vw;
+}
+
+nav {
+    width: 100%;
     visibility: hidden;
     height: 0;
 }
 
-#sub-submenu {
-    /* float: */
-}
-
-li:hover ul#submenu {
-    visibility: visible;
-    height: auto;
-}
-
-#submenu li:hover ul#sub-submenu {
-    visibility: visible;
-    height: auto;
+#submenu, #sub-submenu {
+    margin-left: 50px;
+    visibility: hidden;
+    height: 0;
 }
 
 nav a {
     text-decoration: none;
     color: gold;
+    font-size: 5vw;
 }
 
+#menu_checkbox:checked ~ nav {
+    visibility: visible;
+    height: auto;
+}
+
+#menu_checkbox:checked ~ nav #submenu_checkbox:checked ~ ul, #menu_checkbox:checked ~ nav #submenu_checkbox:checked ~ ul #sub-submenu_checkbox:checked ~ ul {
+    visibility: visible;
+    height: auto;
+}
+
+#menu_checkbox, #submenu_checkbox, #sub-submenu_checkbox { 
+    display: none;
+}
