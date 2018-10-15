@@ -1,0 +1,79 @@
+/* Custom font: font-family: 'Cinzel Decorative', cursive; / font-family: 'Open Sans', sans-serif; */
+/* SVG Convert: https://www.aconvert.com/image/png-to-svg/ */
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+header li {
+    list-style: none;
+}
+
+.logo a img {
+    width: 10vw; 
+    height: 10vw;
+}
+
+.menu_icon {
+    color: gold;
+    font-size: 10vw;
+}
+
+nav {
+    width: 100%;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#submenu, #sub-submenu {
+    margin-left: 50px;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: gold;
+    font-size: 5vw;
+}
+
+#menu_checkbox:checked ~ nav {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+#menu_checkbox:checked ~ nav #submenu_checkbox:checked ~ ul, #menu_checkbox:checked ~ nav #submenu_checkbox:checked ~ ul #sub-submenu_checkbox:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
+#menu_checkbox, #submenu_checkbox, #sub-submenu_checkbox { 
+    display: none;
+}
