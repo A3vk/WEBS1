@@ -1,0 +1,29 @@
+/* MAIN */
+
+main p, main h3, main h2 {
+    color: white;
+}
+
+.uitleg {
+    text-align: center;
+    margin: 25px;
+}
+
+.champions h2 {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+.card img {
+    object-fit: contain;
+}
+
+.tekst {
+    margin-left: 10px;
+}
