@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LoL - Roles/Mid</title>
+    <title>LoL - Mid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
@@ -11,39 +11,46 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="../assets/logo.png"></a></div>
+        <!-- <div class="logo"><a href="index.html"><img src="../assets/logo.png"></a></div> -->
         <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox"><i class="fas fa-bars menu_icon"></i></label>
+        <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li>
                     <input type="checkbox" id="submenu_checkbox">
-                    <a href="#"><label for="submenu_checkbox">Roles <i class="fas fa-caret-down"></i></label></a>
+                    <a href="roles.html"><label for="submenu_checkbox">Roles <i class="fas fa-caret-down"></i></label></a>
                     <ul id="submenu">
-                        <li><a href="#">Top</a></li>
-                        <li><a href="#">Mid</a></li>
+                        <li><a href="top.html">Top</a></li>
+                        <li><a href="mid.html">Mid</a></li>
                         <li>
                             <input type="checkbox" id="sub-submenu_checkbox">
-                            <a href="#"><label for="sub-submenu_checkbox">Bot <i class="fas fa-caret-down"></i></label></a>
+                            <a href="bot.html"><label for="sub-submenu_checkbox">Bot <i class="fas fa-caret-down"></i></label></a>
                             <ul id="sub-submenu">
-                                <li><a href="#">Adc</a></li>
-                                <li><a href="#">Support</a></li>
+                                <li><a href="adc.html">Adc</a></li>
+                                <li><a href="support.html">Support</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Jungle</a></li>
+                        <li><a href="jungle.html">Jungle</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Patch</a></li>
-                <li><a href="#">Algemeen</a></li>
-                <li><a href="#">Bugs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="patch.html">Patch</a></li>
+                <li><a href="algemeen.html">Algemeen</a></li>
+                <li><a href="bugs.html">Bugs</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
     </main>
     <footer>
+        <div class="social">
+            <a href="https://twitter.com/riotgames"><div class="icon"><i class="fab fa-twitter"></i></div>Twitter</a>
+            <a href="https://www.facebook.com/RiotGames/"><div class="icon"><i class="fab fa-facebook"></i></div>Facebook</a>
+            <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
+            <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
+        </div>
+        <p>&copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
     </footer>
 </body>
 </html>
