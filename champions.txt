@@ -1,0 +1,146 @@
+Top:
+	- Aatrox
+	- Camille
+	- Cho'Gath
+	- Darious
+	- Dr. Mundo
+	- Fiora
+	- Gangplank
+	- Garen
+	- Gnar
+	- Illaoi
+	- Irelia
+	- Jax
+	- Jayce
+	- Kayle
+	- Kennen
+	- Kled
+	- Malphite
+	- Maokai
+	- Mordekaiser
+	- Nasus
+	- Olaf
+	- Orn
+	- Pantheon
+	- Poppy
+	- Quinn
+	- Renekton
+	- Riven
+	- Rumble
+	- Shen
+	- Singed
+	- Sion
+	- Teemo
+	- Trundle
+	- Tryndamere
+	- Urgot
+	- Vladimir
+	- Yorick
+Mid:
+	- Ahri
+	- Akali
+	- Anivia
+	- Annie
+	- Aurelion Sol
+	- Azir
+	- Brand
+	- Cassiopeia
+	- Ekko
+	- Fizz
+	- Galio
+	- Heimerdinger
+	- Karthus
+	- Kassadin
+	- Katarina
+	- LeBlanc
+	- Lissandra
+	- Lux
+	- Malzahar
+	- Orianna
+	- Ryze
+	- Swain
+	- Syndra
+	- Talon
+	- Twisted Fate
+	- Veigar
+	- Vel'Koz
+	- Viktor
+	- Xerath
+	- Yasuo
+	- Zed
+	- Ziggs
+	- Zoe
+Adc: 
+	- Ashe
+	- Caitlyn
+	- Corki
+	- Draven
+	- Ezreal
+	- Jhin
+	- Jinx
+	- Kai'Sa
+	- Kalista
+	- Kog'Maw
+	- Lucian
+	- Miss Fortune
+	- Sivir
+	- Tristana
+	- Twitch
+	- Varus
+	- Vayne
+	- Xayah
+Support: 
+	- Alistar
+	- Bard
+	- Blitzcrank
+	- Braum
+	- Janna
+	- Karma
+	- Leona
+	- Lulu
+	- Morgana
+	- Nami
+	- Nautilus
+	- Pyke
+	- Rakan
+	- Sona
+	- Soraka
+	- Tahm Kench
+	- Taric
+	- Thresh
+	- Zilean
+	- Zyra
+Jungle:
+	- Amumu
+	- Diana
+	- Elise
+	- Evelynn
+	- Fiddlesticks
+	- Gragas
+	- Graves
+	- Hecarim
+	- Ivern	
+	- Jarvan IV
+	- Kayn
+	- Kha'Zix
+	- Kindred
+	- Lee Sin
+	- Master Yi
+	- Nidalee
+	- Nocturen
+	- Nunu & Willump
+	- Rammus
+	- Rek'Sai
+	- Rengar
+	- Sejuani
+	- Shaco
+	- Shyvana
+	- Skarner
+	- Taliyah
+	- Udyr
+	- Vi
+	- Voloibear
+	- Warwick
+	- Wukong
+	- Xin Zhao
+	- Zac
