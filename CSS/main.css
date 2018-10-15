@@ -1,5 +1,6 @@
 /* Custom font: font-family: 'Cinzel Decorative', cursive; / font-family: 'Open Sans', sans-serif; */
 /* SVG Convert: https://www.aconvert.com/image/png-to-svg/ */
+
 body {
     margin: 0;
     background-color: black;
@@ -23,6 +24,10 @@ header {
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+}
+
+header li {
+    list-style: none;
 }
 
 .logo a img {
