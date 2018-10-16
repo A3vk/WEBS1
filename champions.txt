@@ -20,7 +20,7 @@ Top:
 	- Mordekaiser
 	- Nasus
 	- Olaf
-	- Orn
+	- Ornn
 	- Pantheon
 	- Poppy
 	- Quinn
@@ -127,7 +127,7 @@ Jungle:
 	- Lee Sin
 	- Master Yi
 	- Nidalee
-	- Nocturen
+	- Nocturne
 	- Nunu & Willump
 	- Rammus
 	- Rek'Sai
@@ -139,7 +139,7 @@ Jungle:
 	- Taliyah
 	- Udyr
 	- Vi
-	- Voloibear
+	- Volibear
 	- Warwick
 	- Wukong
 	- Xin Zhao
