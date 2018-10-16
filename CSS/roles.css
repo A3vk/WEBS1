@@ -1,0 +1,37 @@
+/* MAIN */
+.wrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 90vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/top_bg.jpg") no-repeat;
+}
+
+body {
+    background-color: white;
+}
+
+main p, main h3, main h2 {
+    color: white;
+}
+
+.uitleg {
+    text-align: center;
+    margin: 25px;
+    margin-top: 250px;
+}
+
+.champions h2 {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+.card img {
+    object-fit: contain;
+}
+
+.tekst {
+    margin-left: 10px;
+}

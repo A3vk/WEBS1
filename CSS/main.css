@@ -1,6 +1,7 @@
 /* Custom font: font-family: 'Cinzel Decorative', cursive; / font-family: 'Open Sans', sans-serif; */
 /* SVG Convert: https://www.aconvert.com/image/png-to-svg/ */
 
+/* RESET */
 body {
     margin: 0;
     background-color: black;
@@ -19,18 +20,24 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* MENU */
 header {
     display: flex;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+    background-color: rgba(0, 0, 0, .5)
 }
 
 header li {
     list-style: none;
 }
 
-.logo a img {
+label {
+    display: flex;
+}
+
+.logo img {
     width: 10vw; 
     height: 10vw;
 }
@@ -76,4 +83,28 @@ nav a {
 
 #menu_checkbox, #submenu_checkbox, #sub-submenu_checkbox { 
     display: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around
+}
+
+.social .icon {
+    font-size: 5vw;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    color: white;
 }

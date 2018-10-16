@@ -3,47 +3,298 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LoL - Roles/Jungle</title>
+    <title>LoL - Jungle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/roles.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html"><img src="../assets/logo.png"></a></div>
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox"><i class="fas fa-bars menu_icon"></i></label>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li>
-                    <input type="checkbox" id="submenu_checkbox">
-                    <a href="#"><label for="submenu_checkbox">Roles <i class="fas fa-caret-down"></i></label></a>
-                    <ul id="submenu">
-                        <li><a href="#">Top</a></li>
-                        <li><a href="#">Mid</a></li>
-                        <li>
-                            <input type="checkbox" id="sub-submenu_checkbox">
-                            <a href="#"><label for="sub-submenu_checkbox">Bot <i class="fas fa-caret-down"></i></label></a>
-                            <ul id="sub-submenu">
-                                <li><a href="#">Adc</a></li>
-                                <li><a href="#">Support</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Jungle</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Patch</a></li>
-                <li><a href="#">Algemeen</a></li>
-                <li><a href="#">Bugs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-    </footer>
+    <div class="wrapper">
+        <header>
+            <!-- <div class="logo"><a href="index.html"><img src="../assets/logo.png"></a></div> -->
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <input type="checkbox" id="submenu_checkbox">
+                        <a href="roles.html"><label for="submenu_checkbox">Roles <i class="fas fa-caret-down"></i></label></a>
+                        <ul id="submenu">
+                            <li><a href="top.html">Top</a></li>
+                            <li><a href="mid.html">Mid</a></li>
+                            <li>
+                                <input type="checkbox" id="sub-submenu_checkbox">
+                                <a href="bot.html"><label for="sub-submenu_checkbox">Bot <i class="fas fa-caret-down"></i></label></a>
+                                <ul id="sub-submenu">
+                                    <li><a href="adc.html">Adc</a></li>
+                                    <li><a href="support.html">Support</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="jungle.html">Jungle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="patch.html">Patch</a></li>
+                    <li><a href="algemeen.html">Algemeen</a></li>
+                    <li><a href="bugs.html">Bugs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="uitleg">
+                <h2>Jungle</h2>
+                <p>Jungle is the only role where you won’t be having a direct lane opponent to fight against. Instead you will be farming neutral monsters in your side of the jungle. By doing this you gain the advantage that the enemy team never truly knows where you are unless you show yourself. Use this to your advantage and gank lanes that overextend. By doing this will create a lead for yourself and also your team.</p>
+                <p>As a jungler it will be your job to secure dragon and rift herald or later in the game Baron Nasher. Dragon and rift herald can be done by ganking top or bot to kill the enemy. This will give you the opening to secure those objectives. Baron is a little more complicated most likely you will have to wait till a team fight is won so that you have time to kill baron without fear of the enemy stealing baron or engaging on you.</p>
+                <p>Jungle champions have three overarching categories: tank, fighter and assassin. A tank will have high amounts of crowd control making ganks easier. In the later stages of the game they will supports their team by being very hard to kill and control the enemy as well as they can. Fighters are your main frontline component. They are not as hard to kill as a tank but are still pretty durable. When ganking they use their strong dual potential to kill the enemy and snowball them self till a point there is no stopping them. Lastly the assassin. Assassins use the element of surprise to overpower their enemy's and kill them before they can react. Assassins should look to ganks as much as possible so that they get kills. This is important since if an assassin falls behind he will most likely not be very useful during the game. In team fights you should look for an opening to kill a high priority target and get out before you get killed yourself.</p>
+                <p>For summoners spells you can choose between flash and ghost while always having smite. Flash can be used for utility be offering a short distance blink while ghost gives you more movement speed for champions who need it. Smite is a must for the jungle it will deal a lot of damage to neutral monsters as well as heal you. This can be used on bigger targets like dragon and baron for the last bit of hp they have so that the enemy won't be able to steal it. Besides all of this smite will allow you to buy the jungle items in the shop which will make farming monsters in the jungle a whole lot easier.</p>
+            </div>
+            <div class="champions">
+                <h2>Jungle Champions</h2>
+                <div class="card"> <!-- AMUMU -->
+                    <img src="../assets/champions/Jungle/amumu.png">
+                    <div class="tekst">
+                        <h3>Amumu</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- DIANA -->
+                    <img src="../assets/champions/Jungle/diana.png">
+                    <div class="tekst">
+                        <h3>Diana</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- ELISE -->
+                    <img src="../assets/champions/Jungle/elise.png">
+                    <div class="tekst">
+                        <h3>Elise</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- EVELYNN -->
+                    <img src="../assets/champions/Jungle/evelynn.png">
+                    <div class="tekst">
+                        <h3>Evelynn</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- FIDDLESTICKS -->
+                    <img src="../assets/champions/Jungle/fiddlesticks.png">
+                    <div class="tekst">
+                        <h3>Fiddlesticks</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- GRAGAS -->
+                    <img src="../assets/champions/Jungle/gragas.png">
+                    <div class="tekst">
+                        <h3>Gragas</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- GRAVES -->
+                    <img src="../assets/champions/Jungle/graves.png">
+                    <div class="tekst">
+                        <h3>Graves</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- HECARIM -->
+                    <img src="../assets/champions/Jungle/hecarim.png">
+                    <div class="tekst">
+                        <h3>Hecarim</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- IVERN -->
+                    <img src="../assets/champions/Jungle/ivern.png">
+                    <div class="tekst">
+                        <h3>Ivern</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- JARVAN IV -->
+                    <img src="../assets/champions/Jungle/jarvan_iv.png">
+                    <div class="tekst">
+                        <h3>Jarvan IV</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- KAYN -->
+                    <img src="../assets/champions/Jungle/kayn.png">
+                    <div class="tekst">
+                        <h3>Kayn</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- KHA'ZIX -->
+                    <img src="../assets/champions/Jungle/kha'zix.png">
+                    <div class="tekst">
+                        <h3>Kha'Zix</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- KINDRED -->
+                    <img src="../assets/champions/Jungle/kindred.png">
+                    <div class="tekst">
+                        <h3>Kindred</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- LEE SIN -->
+                    <img src="../assets/champions/Jungle/lee_sin.png">
+                    <div class="tekst">
+                        <h3>Lee Sin</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- MASTER YI -->
+                    <img src="../assets/champions/Jungle/master_yi.png">
+                    <div class="tekst">
+                        <h3>Master Yi</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- NIDALEE -->
+                    <img src="../assets/champions/Jungle/nidalee.png">
+                    <div class="tekst">
+                        <h3>Nidalee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- NOCTURNE -->
+                    <img src="../assets/champions/Jungle/nocturne.png">
+                    <div class="tekst">
+                        <h3>Nocturne</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- NUNU & WILLUMP -->
+                    <img src="../assets/champions/Jungle/nunu_&_willump.png">
+                    <div class="tekst">
+                        <h3>Nunnu & Willump</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- RAMMUS -->
+                    <img src="../assets/champions/Jungle/rammus.png">
+                    <div class="tekst">
+                        <h3>Rammus</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- REK'SAI -->
+                    <img src="../assets/champions/Jungle/rek'sai.png">
+                    <div class="tekst">
+                        <h3>Rek'Sai</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- RENGAR -->
+                    <img src="../assets/champions/Jungle/rengar.png">
+                    <div class="tekst">
+                        <h3>Rengar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- SEJUANI -->
+                    <img src="../assets/champions/Jungle/sejuani.png">
+                    <div class="tekst">
+                        <h3>Sejuani</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- SHACO -->
+                    <img src="../assets/champions/Jungle/shaco.png">
+                    <div class="tekst">
+                        <h3>Shaco</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- SHYVANA -->
+                    <img src="../assets/champions/Jungle/shyvana.png">
+                    <div class="tekst">
+                        <h3>Shyvana</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- SKARNER -->
+                    <img src="../assets/champions/Jungle/skarner.png">
+                    <div class="tekst">
+                        <h3>Skarner</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- TALIYAH -->
+                    <img src="../assets/champions/Jungle/taliyah.png">
+                    <div class="tekst">
+                        <h3>Taliyah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- UDYR -->
+                    <img src="../assets/champions/Jungle/udyr.png">
+                    <div class="tekst">
+                        <h3>Udyr</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- VI -->
+                    <img src="../assets/champions/Jungle/vi.png">
+                    <div class="tekst">
+                        <h3>Vi</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- VOLIBEAR -->
+                    <img src="../assets/champions/Jungle/volibear.png">
+                    <div class="tekst">
+                        <h3>Volibear</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- WARWICK -->
+                    <img src="../assets/champions/Jungle/warwick.png">
+                    <div class="tekst">
+                        <h3>Warwick</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- WUKONG -->
+                    <img src="../assets/champions/Jungle/wukong.png">
+                    <div class="tekst">
+                        <h3>Wukong</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- XIN ZHAO -->
+                    <img src="../assets/champions/Jungle/xin_zhao.png">
+                    <div class="tekst">
+                        <h3>Xin Zhao</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+                <div class="card"> <!-- ZAC -->
+                    <img src="../assets/champions/Jungle/zac.png">
+                    <div class="tekst">
+                        <h3>Zac</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://twitter.com/riotgames"><div class="icon"><i class="fab fa-twitter"></i></div>Twitter</a>
+                <a href="https://www.facebook.com/RiotGames/"><div class="icon"><i class="fab fa-facebook"></i></div>Facebook</a>
+                <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
+                <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
+            </div>
+            <p>&copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
+        </footer>
+    </div>
 </body>
 </html>
