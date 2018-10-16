@@ -21,7 +21,6 @@ p {
 }
 
 /* MENU */
-
 header {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +86,6 @@ nav a {
 }
 
 /* FOOTER */
-
 footer {
     text-align: center;
     font-size: 2vw;
