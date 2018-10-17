@@ -1,9 +1,123 @@
 /* MAIN */
 ul {
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 main div ul li {
     color: white;
+}
+
+main .list ul .oud {
+    color: red;
+    text-decoration: line-through;
+}
+
+/* LIST STYLE IMAGE */
+.ezreal {
+    list-style: square url("../assets/patch/ezreal/Ezreal.png") inside;
+}
+
+.ezreal ul {
+    list-style-image: none;
+}
+
+.ezreal .w {
+    list-style: square url("../assets/patch/ezreal/EzrealW.png");
+}
+
+.ezreal .q {
+    list-style: square url("../assets/patch/ezreal/EzrealQ.png") inside;
+}
+
+.ezreal .e {
+    list-style: square url("../assets/patch/ezreal/EzrealE.png") inside;
+}
+
+.ezreal .r {
+    list-style: square url("../assets/patch/ezreal/EzrealR.png") inside;
+}
+
+.ezreal .p {
+    list-style: square url("../assets/patch/ezreal/EzrealP.png") inside;
+}
+
+.ahri {
+    list-style: square url("../assets/patch/ahri/Ahri.png") inside;
+}
+
+.ahri ul {
+    list-style-image: none;
+}
+
+.ahri .r {
+    list-style: square url("../assets/patch/ahri/AhriR.png") inside;
+}
+
+.evelynn {
+    list-style: square url("../assets/patch/evelynn/Evelynn.png") inside;
+}
+
+.evelynn ul {
+    list-style-image: none;
+}
+
+.evelynn .e {
+    list-style: square url("../assets/patch/evelynn/EvelynnE.png") inside;
+}
+
+.evelynn .r {
+    list-style: square url("../assets/patch/evelynn/EvelynnR.png") inside;
+}
+
+.graves {
+    list-style: square url("../assets/patch/graves/Graves.png") inside;
+}
+
+.graves ul {
+    list-style-image: none;
+}
+
+.jhin {
+    list-style: square url("../assets/patch/jhin/Jhin.png") inside;
+}
+
+.jhin .p {
+    list-style: square url("../assets/patch/jhin/JhinP.png") inside;
+}
+
+.jhin ul {
+    list-style-image: none;
+}
+
+.nami {
+    list-style: square url("../assets/patch/nami/Nami.png") inside;
+}
+
+.nami ul {
+    list-style-image: none;
+}
+
+.nami .w {
+    list-style: square url("../assets/patch/nami/NamiW.png") inside;
+}
+
+.sion {
+    list-style: square url("../assets/patch/sion/Sion.png") inside;
+}
+
+.sion ul {
+    list-style-image: none;
+}
+
+.runes {
+    list-style: square url("../assets/patch/DarkHarvest.png") inside;
+}
+
+.runes ul {
+    list-style-image: none;
+}
+
+.bugs {
+    list-style-image: none;
 }
