@@ -110,6 +110,7 @@ footer p {
 }
 
 @media screen and (min-width: 610px) {
+    /* MENU */
     .logo img {
         width: 5vw;
         height: 5vw;
@@ -122,6 +123,15 @@ footer p {
     nav a, nav label {
         font-size: 3vw;
     }
+
+    /* FOOTER */
+    footer {
+        font-size: 2vw;
+    }
+    
+    .social .icon {
+        font-size: 4vw;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -132,6 +142,7 @@ footer p {
 
     .menu_icon {
         visibility: hidden;
+        height: 0;
     }
 
     .logo img {
@@ -154,7 +165,7 @@ footer p {
     }
 
     nav a, nav label {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     nav ul i {
@@ -165,6 +176,7 @@ footer p {
         height: 0;
         display: flex;
         flex-direction: column;
+        margin-left: 25px;
     }
 
     .roles:hover ~ #submenu, #submenu:hover {
@@ -179,5 +191,14 @@ footer p {
         height: auto;
         visibility: visible;
         cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 1vw;
+    }
+    
+    .social .icon {
+        font-size: 2vw;
     }
 }
