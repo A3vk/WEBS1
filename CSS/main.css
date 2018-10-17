@@ -33,7 +33,7 @@ nav li {
     list-style: none;
 }
 
-label {
+header label {
     display: flex;
 }
 

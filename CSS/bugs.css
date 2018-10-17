@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+form label {
+    color: white;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 10px;
+}
+
+form select {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+form input[type="checkbox"] {
+    
+}
+
+.verplicht {
+    color: red;
+    font-size: 2vw;
+}
