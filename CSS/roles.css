@@ -74,6 +74,7 @@ main p, main h3, main h2 {
     .card .tekst  {
         position: absolute;
         width: 70%;
+        height: 100%;
         font-size: 0.8vw;
         opacity: 0;
         transition: opacity 1s;
@@ -82,5 +83,10 @@ main p, main h3, main h2 {
     .champions .tekst:hover {
         opacity: 1;
         cursor: pointer;
+        background-color: rgba(0, 0, 0 , 0.5)
+    }
+    
+    .tekst p, .tekst h3 {
+        color: white;
     }
 }
