@@ -13,8 +13,11 @@ main .list ul .oud {
     text-decoration: line-through;
 }
 
-/* LIST STYLE IMAGE */
+.list h2, .list h3 {
+    display: inline
+}
 
+/* LIST STYLE IMAGE */
 .ezreal {
     list-style: square url("../assets/patch/ezreal/Ezreal.png") inside;
 }
@@ -24,7 +27,7 @@ main .list ul .oud {
 }
 
 .ezreal .w {
-    list-style: square url("../assets/patch/ezreal/EzrealW.png");
+    list-style: square url("../assets/patch/ezreal/EzrealW.png") inside;
 }
 
 .ezreal .q {
