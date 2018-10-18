@@ -37,7 +37,6 @@ form select {
 	border: 1px solid rgb(165, 141, 2);
 	padding: 8px;
     position: relative;
-    z-index: -1;
 }
 
 .checkbox::after {

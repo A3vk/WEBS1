@@ -1,11 +1,4 @@
 /* MAIN */
-.wrapper {
-    /* Background with gradient */
-    background-repeat: no-repeat;
-    background-image: url("../assets/bg/top_bg_mobile.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 90vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/top_bg_mobile.jpg");
-}
-
 main p, main h3, main h2 {
     color: white;
 }
@@ -36,11 +29,6 @@ main p, main h3, main h2 {
 }
 
 @media screen and (min-width: 610px) {
-    .wrapper {
-        background-image: url("../assets/bg/top_bg_tablet.jpg");
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 90vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/top_bg_tablet.jpg");
-    }
-
     .uitleg {
         margin: 50px;
     }
@@ -55,11 +43,6 @@ main p, main h3, main h2 {
     .wrapper {
         background-image: url("../assets/bg/top_bg_tablet.jpg");
         background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 90vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/top_bg_tablet.jpg");
-    }
-
-    /* Menu boven de afbeeldingen */
-    header {
-        z-index: 99;
     }
 
     /* champion hover */
