@@ -16,12 +16,15 @@ main {
 }
 
 iframe {
-    margin: 0 auto;
-    width: 90%;
+    object-fit: contain;
+    width: auto;
+    /* margin: 0 auto; */
+    /* width: 100%; */
 }
 
 img {
     object-fit: contain;
+    width: 100%;
 }
 
 .card {
@@ -36,15 +39,16 @@ img {
 .news {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 610px) {
     .card {
         width: 45%;
     }
 
-    .iframe {
-        width: auto;
+    .iframe {       
+       height: 30vw;
     }
 
     .news {
@@ -52,7 +56,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1024px) {
     .card {
         width: 20%;
     }
