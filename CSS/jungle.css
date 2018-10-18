@@ -1,0 +1,24 @@
+.wrapper {
+    background-repeat: no-repeat;
+    background-image: url("../assets/bg/jngl_bg_mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 160vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/jngl_bg_mobile.jpg");
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        background-image: url("../assets/bg/jngl_bg_tablet.jpg");
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 120vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/jngl_bg_tablet.jpg");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        background-image: url("../assets/bg/jngl_bg.jpg");
+        height: 100%; 
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
