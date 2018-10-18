@@ -1,0 +1,7 @@
+.card h3, .card p {
+    color: white;
+}
+
+.card p {
+    font-size: 0.8em;
+}
