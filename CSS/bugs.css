@@ -40,16 +40,12 @@ form select {
 }
 
 .checkbox::after {
-	content: '\2714';
+	content: '\2713';
 	font-size: 14px;
 	position: absolute;
 	top: 0px;
 	left: 3px;
-	color: #343bb4;
-}
-
-.checkbox:checked {
-	color: gold;
+	color: #3e46ee;
 }
 
 .checkbox:checked::after {
