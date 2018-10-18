@@ -42,7 +42,7 @@
         </nav>
     </header>
     <main>
-        <form action="bugs.html" method="POST" class="report">
+        <form class="report">
             <label>Where did you run into the bug? <span class="verplicht">*</span></label>
             <select class="where">
                 <option></option>
@@ -102,11 +102,8 @@
                 <option>The bug was happening constantly</option>
             </select>
             <label>Was this bug related to a specific champion?</label>
-            <div>
-                <div class="container">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </div>
+            <div class="champion">
+                <input type="checkbox" class="checkbox">
                 <select>
                     <option></option>
                     <option>Aatrox</option>
@@ -255,10 +252,10 @@
             <label>Summarize the bug for us <span class="verplicht">*</span></label>
             <input type="text" class="summarize">
             <label>Any specifics you think we should know? <span class="verplicht">*</span></label>
-            <textarea class="specifics"></textarea>
+            <textarea class="specifics" placeholder="What I did that led up to the bug: &#x0a;1. &#x0a;2. &#x0a;3. &#x0a;&#x0a;Results:"></textarea>
             <label> Any links you think would help?</label>
             <input type="url" class="link">
-            <input type="submit" value="Send Report">
+            <input type="submit" value="Submit">
         </form>
     </main>
     <footer>

@@ -14,17 +14,114 @@ form input, form select, form textarea {
     margin-bottom: 10px;
 }
 
+.verplicht {
+    color: red;
+    font-size: 1.5em;
+}
+
+/* SELECT STYLE */
 form select {
     background-color: #131650;
     border: 1px solid rgb(165, 141, 2);
     color: white;
 }
 
-form input[type="checkbox"] {
-    
+.champion {
+    display: flex;
 }
 
-.verplicht {
-    color: red;
-    font-size: 2vw;
+/* CHECKBOX STYLE */
+.checkbox {
+    -webkit-appearance: none;
+    background-color: #131650;
+	border: 1px solid rgb(165, 141, 2);
+	padding: 8px;
+    position: relative;
+    z-index: -1;
+}
+
+.checkbox::after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #343bb4;
+}
+
+.checkbox:checked {
+	color: gold;
+}
+
+.checkbox:checked::after {
+	color: white;
+}
+
+.champion select {
+    margin-left: 25px;
+    margin-top: 3px;
+}
+
+/* INPUT TEXT STYLE */
+input[type="text"] {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+/* TEXTAREA STYLE */
+textarea {
+    min-height: 250px;
+    max-width: 100%;
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+/* INPUT URL STYLE */
+input[type="url"] {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+/* BUTTON STYLE */
+input[type="submit"] {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 610px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .where {
+        width: 200px;;
+    }
+
+    .type {
+        width: 300px;
+    }
+
+    .times {
+        width: 200px;
+    }
+
+    /* INPUT URL STYLE */
+    input[type="url"] {
+        width: 30%;
+    }
+
+    /* BUTTON STYLE */
+    input[type="submit"] {
+        width: 10%;
+        margin: 0 auto;
+    }
 }
