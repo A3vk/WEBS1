@@ -46,6 +46,7 @@ header label {
 .menu_icon {
     color: gold;
     font-size: 10vw;
+    margin-left: 10px;
 }
 
 nav {

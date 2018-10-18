@@ -1,7 +1,59 @@
-.card h3, .card p {
+h3, p, h2 {
     color: white;
 }
 
 .card p {
     font-size: 0.8em;
+}
+
+a {
+    color: white;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+iframe {
+    margin: 0 auto;
+    width: 90%;
+}
+
+img {
+    object-fit: contain;
+}
+
+.card {
+    border: 1px solid gold;
+    padding: 9px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 740px) {
+    .card {
+        width: 45%;
+    }
+
+    .iframe {
+        width: auto;
+    }
+
+    .news {
+        justify-content: space-between
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .card {
+        width: 20%;
+    }
 }
