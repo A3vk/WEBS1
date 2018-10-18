@@ -53,6 +53,14 @@ form select {
 }
 
 .champion select {
+    visibility: hidden;
+}
+
+.checkbox:checked ~ select {
+    visibility: visible;
+}
+
+.champion select {
     margin-left: 25px;
     margin-top: 3px;
 }
@@ -97,16 +105,20 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 1024px) {
+    form {
+        width: 40%;
+    }
+
     .where {
         width: 200px;;
     }
 
     .type {
-        width: 300px;
+        width: 350px;
     }
 
     .times {
-        width: 200px;
+        width: 230px;
     }
 
     /* INPUT URL STYLE */
