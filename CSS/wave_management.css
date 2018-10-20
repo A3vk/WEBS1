@@ -1,3 +1,11 @@
+/* START BG */
+.wrapper {
+    background-repeat: no-repeat;
+    background-image: url("../assets/bg/wave_management_bg_mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 160vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/wave_management_bg_mobile.jpg");
+}
+/* END BG */
+
 p, h2 {
     color: white;
 }
@@ -38,12 +46,36 @@ th:nth-child(4), td:nth-child(4) {
 }
 
 @media screen and (min-width: 768px) {
+    /* START BG */
+    .wrapper {
+        background-repeat: no-repeat;
+        background-image: url("../assets/bg/wave_management_bg_tablet.jpg");
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 160vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/wave_management_bg_tablet.jpg");
+    }
+    /* END BG */
+
     table {
         font-size: 2vw;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    /* START BG */
+    .wrapper {
+        background-image: url("../assets/bg/wave_management_bg.jpg");
+        height: 100%; 
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        background-color: rgba(0, 0, 0 , 0.2);
+    }
+    /* END BG */
+
     img {
         width: 50%;
         margin-left: 25%;

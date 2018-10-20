@@ -111,7 +111,7 @@ footer p {
     color: white;
 }
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 768px) {
     /* MENU */
     .logo img {
         width: 5vw;

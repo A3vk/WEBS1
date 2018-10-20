@@ -11,323 +11,325 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <input type="checkbox" id="submenu_checkbox">
-                    <label for="submenu_checkbox" class="roles">Roles <i class="fas fa-caret-down"></i></label>
-                    <ul id="submenu">
-                        <li><a href="top.html">Top</a></li>
-                        <li><a href="mid.html">Mid</a></li>
-                        <li>
-                            <input type="checkbox" id="sub-submenu_checkbox">
-                            <label for="sub-submenu_checkbox" class="bot">Bot <i class="fas fa-caret-down"></i></label>
-                            <ul id="sub-submenu">
-                                <li><a href="adc.html">Adc</a></li>
-                                <li><a href="support.html">Support</a></li>
-                            </ul>
-                        </li>
-                        <li class="last"><a href="jungle.html">Jungle</a></li>
-                    </ul>
-                </li>
-                <li><a href="patch.html">Patch</a></li>
-                <li><a href="wave_management.html">Wave Management</a></li>
-                <li><a href="bugs.html">Bugs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="tekst">
-            <h2>Wave Management</h2>
-            <p>Wave management is an important part of the game and if done correctly it can lead to an easy victory over your opponents. Effective use of wave management makes sure you will be safer from enemy ganks while denying your enemy minions by pushing your minions under the tower at opportune moments.</p>
-            <p>The first step of wave management is to understand the waves. The first minions spawn at one minute and thirty seconds the first wave of minions will spawn. From that point on a new wave will spawn every thirty seconds. A minion wave consists out of three melee minions and three caster minions while every third wave will have an extra cannon minion as well. It's important to keep in mind that each minion type gives you a different amount of gold. A cannon minion will give you the most gold, after that a melee minions and lastly the caster minions. The amount of gold you gain for a last hit will also scale up throughout the game.</p>
-            <img src="../assets/wave_management/wave.jpg">
-            <p>A minion wave will start pushing as soon as there is an imbalance in friendly and enemy minions. The side with more minions will slowly start to push towards the enemy tower until it eventually gets under the tower. At this point the tower will kill all of the minions and the wave will reset towards the middle of the map.</p>
-            <img src="../assets/wave_management/tower.jpg">
-            <p>Even if the minion wave is equal it doesn’t mean a lane can’t push on its own. If 2 new waves crash into each other but they're not in the middle they will automatically push towards the longer side of the lane. The lane that is shown in the following picture will therefore push into red waves turret even without the help of Jax.</p>
-            <img src="../assets/wave_management/push.jpg">
-            <p>If you find yourself in this situation you will have two options. The first Option is to only last hit this will result in your wave pushing slowly causing more and more minions to clump together building a massive wave. This gives you some safety if your getting ganked or fight with your lane opponent in the sense that all the minions will attack your lane opponent. The second option is to push the wave as fast as you can under the enemy turret causing the wave to bounce back. The benefits of this are that you spend less time overextended and vulnerable to ganks.</p>
-            <p>By the time you want to recall you preferably want to look for an opening to shove your wave under the enemy turret. This will make sure they lose gold and exp if they are no longer in the lane. It will also reset your lane into a neutral position or the wave will push towards you. In both scenarios you will have a nice minion wave to come back to while your opponent just lost valuable minions.</p>
-        </div>
-        <div class="tabel">
-            <h2>Max Gold per Miniute</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Minutes</th>
-                        <th>Creep Wave</th>
-                        <th>Max Creep Score</th>
-                        <th>Max Creep Gold</th>
-                        <th>Passive Gold</th>
-                        <th>Max GOld</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0.0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>475</td>
-                        <td>475</td>
-                    </tr>
-                    <tr>
-                        <td>0.5</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>475</td>
-                        <td>475</td>
-                    </tr>
-                    <tr>
-                        <td>1.0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>475</td>
-                        <td>475</td>
-                    </tr>
-                    <tr>
-                        <td>1.5</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>114</td>
-                        <td>475</td>
-                        <td>589</td>
-                    </tr>
-                    <tr>
-                        <td>2.0</td>
-                        <td>2</td>
-                        <td>12</td>
-                        <td>234</td>
-                        <td>514</td>
-                        <td>748</td>
-                    </tr>
-                    <tr>
-                        <td>2.5</td>
-                        <td>3</td>
-                        <td>19</td>
-                        <td>381</td>
-                        <td>553</td>
-                        <td>934</td>
-                    </tr>
-                    <tr>
-                        <td>3.0</td>
-                        <td>4</td>
-                        <td>25</td>
-                        <td>501</td>
-                        <td>592</td>
-                        <td>1093</td>
-                    </tr>
-                    <tr>
-                        <td>3.5</td>
-                        <td>5</td>
-                        <td>31</td>
-                        <td>621</td>
-                        <td>631</td>
-                        <td>1252</td>
-                    </tr>
-                    <tr>
-                        <td>4.0</td>
-                        <td>6</td>
-                        <td>38</td>
-                        <td>768</td>
-                        <td>670</td>
-                        <td>1438</td>
-                    </tr>
-                    <tr>
-                        <td>4.5</td>
-                        <td>7</td>
-                        <td>44</td>
-                        <td>888</td>
-                        <td>709</td>
-                        <td>1597</td>
-                    </tr>
-                    <tr class="yellow">
-                        <td>5.0</td>
-                        <td>8</td>
-                        <td>50</td>
-                        <td>1008</td>
-                        <td>748</td>
-                        <td>1756</td>
-                    </tr>
-                    <tr>
-                        <td>5.5</td>
-                        <td>9</td>
-                        <td>57</td>
-                        <td>1156</td>
-                        <td>787</td>
-                        <td>1943</td>
-                    </tr>
-                    <tr>
-                        <td>6.0</td>
-                        <td>10</td>
-                        <td>63</td>
-                        <td>1276</td>
-                        <td>826</td>
-                        <td>2102</td>
-                    </tr>
-                    <tr>
-                        <td>6.5</td>
-                        <td>11</td>
-                        <td>69</td>
-                        <td>1396</td>
-                        <td>865</td>
-                        <td>2261</td>
-                    </tr>
-                    <tr>
-                        <td>7.0</td>
-                        <td>12</td>
-                        <td>76</td>
-                        <td>1550</td>
-                        <td>904</td>
-                        <td>2454</td>
-                    </tr>
-                    <tr>
-                        <td>7.5</td>
-                        <td>13</td>
-                        <td>82</td>
-                        <td>1676</td>
-                        <td>943</td>
-                        <td>2619</td>
-                    </tr>
-                    <tr>
-                        <td>8.0</td>
-                        <td>14</td>
-                        <td>88</td>
-                        <td>1802</td>
-                        <td>982</td>
-                        <td>2784</td>
-                    </tr>
-                    <tr>
-                        <td>8.5</td>
-                        <td>15</td>
-                        <td>95</td>
-                        <td>1957</td>
-                        <td>1021</td>
-                        <td>2978</td>
-                    </tr>
-                    <tr>
-                        <td>9.0</td>
-                        <td>16</td>
-                        <td>101</td>
-                        <td>2083</td>
-                        <td>1060</td>
-                        <td>3143</td>
-                    </tr>
-                    <tr>
-                        <td>9.5</td>
-                        <td>17</td>
-                        <td>107</td>
-                        <td>2209</td>
-                        <td>1099</td>
-                        <td>3308</td>
-                    </tr>
-                    <tr class="yellow">
-                        <td>10.0</td>
-                        <td>18</td>
-                        <td>114</td>
-                        <td>2365</td>
-                        <td>1138</td>
-                        <td>3503</td>
-                    </tr>
-                    <tr>
-                        <td>10.5</td>
-                        <td>19</td>
-                        <td>120</td>
-                        <td>2491</td>
-                        <td>1177</td>
-                        <td>3668</td>
-                    </tr>
-                    <tr>
-                        <td>11.0</td>
-                        <td>20</td>
-                        <td>126</td>
-                        <td>2617</td>
-                        <td>1216</td>
-                        <td>3833</td>
-                    </tr>
-                    <tr>
-                        <td>11.5</td>
-                        <td>21</td>
-                        <td>133</td>
-                        <td>2773</td>
-                        <td>1255</td>
-                        <td>4028</td>
-                    </tr>
-                    <tr>
-                        <td>12.0</td>
-                        <td>22</td>
-                        <td>139</td>
-                        <td>2905</td>
-                        <td>1294</td>
-                        <td>4199</td>
-                    </tr>
-                    <tr>
-                        <td>12.5</td>
-                        <td>23</td>
-                        <td>145</td>
-                        <td>3037</td>
-                        <td>1333</td>
-                        <td>4370</td>
-                    </tr>
-                    <tr>
-                        <td>13.0</td>
-                        <td>24</td>
-                        <td>152</td>
-                        <td>3200</td>
-                        <td>1372</td>
-                        <td>4572</td>
-                    </tr>
-                    <tr>
-                        <td>13.5</td>
-                        <td>25</td>
-                        <td>158</td>
-                        <td>3332</td>
-                        <td>1411</td>
-                        <td>4743</td>
-                    </tr>
-                    <tr>
-                        <td>14.0</td>
-                        <td>26</td>
-                        <td>164</td>
-                        <td>3464</td>
-                        <td>1450</td>
-                        <td>4914</td>
-                    </tr>
-                    <tr>
-                        <td>14.5</td>
-                        <td>27</td>
-                        <td>171</td>
-                        <td>3627</td>
-                        <td>1489</td>
-                        <td>5116</td>
-                    </tr>
-                    <tr class="yellow">
-                        <td>15.0</td>
-                        <td>28</td>
-                        <td>177</td>
-                        <td>3795</td>
-                        <td>1528</td>
-                        <td>5287</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="https://twitter.com/riotgames"><div class="icon"><i class="fab fa-twitter"></i></div>Twitter</a>
-            <a href="https://www.facebook.com/RiotGames/"><div class="icon"><i class="fab fa-facebook"></i></div>Facebook</a>
-            <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
-            <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
-        </div>
-        <p>&copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
-    </footer>
+    <div class="wrapper">
+        <header>
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <input type="checkbox" id="submenu_checkbox">
+                        <label for="submenu_checkbox" class="roles">Roles <i class="fas fa-caret-down"></i></label>
+                        <ul id="submenu">
+                            <li><a href="top.html">Top</a></li>
+                            <li><a href="mid.html">Mid</a></li>
+                            <li>
+                                <input type="checkbox" id="sub-submenu_checkbox">
+                                <label for="sub-submenu_checkbox" class="bot">Bot <i class="fas fa-caret-down"></i></label>
+                                <ul id="sub-submenu">
+                                    <li><a href="adc.html">Adc</a></li>
+                                    <li><a href="support.html">Support</a></li>
+                                </ul>
+                            </li>
+                            <li class="last"><a href="jungle.html">Jungle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="patch.html">Patch</a></li>
+                    <li><a href="wave_management.html">Wave Management</a></li>
+                    <li><a href="bugs.html">Bugs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="tekst">
+                <h2>Wave Management</h2>
+                <p>Wave management is an important part of the game and if done correctly it can lead to an easy victory over your opponents. Effective use of wave management makes sure you will be safer from enemy ganks while denying your enemy minions by pushing your minions under the tower at opportune moments.</p>
+                <p>The first step of wave management is to understand the waves. The first minions spawn at one minute and thirty seconds the first wave of minions will spawn. From that point on a new wave will spawn every thirty seconds. A minion wave consists out of three melee minions and three caster minions while every third wave will have an extra cannon minion as well. It's important to keep in mind that each minion type gives you a different amount of gold. A cannon minion will give you the most gold, after that a melee minions and lastly the caster minions. The amount of gold you gain for a last hit will also scale up throughout the game.</p>
+                <img src="../assets/wave_management/wave.jpg">
+                <p>A minion wave will start pushing as soon as there is an imbalance in friendly and enemy minions. The side with more minions will slowly start to push towards the enemy tower until it eventually gets under the tower. At this point the tower will kill all of the minions and the wave will reset towards the middle of the map.</p>
+                <img src="../assets/wave_management/tower.jpg">
+                <p>Even if the minion wave is equal it doesn’t mean a lane can’t push on its own. If 2 new waves crash into each other but they're not in the middle they will automatically push towards the longer side of the lane. The lane that is shown in the following picture will therefore push into red waves turret even without the help of Jax.</p>
+                <img src="../assets/wave_management/push.jpg">
+                <p>If you find yourself in this situation you will have two options. The first Option is to only last hit this will result in your wave pushing slowly causing more and more minions to clump together building a massive wave. This gives you some safety if your getting ganked or fight with your lane opponent in the sense that all the minions will attack your lane opponent. The second option is to push the wave as fast as you can under the enemy turret causing the wave to bounce back. The benefits of this are that you spend less time overextended and vulnerable to ganks.</p>
+                <p>By the time you want to recall you preferably want to look for an opening to shove your wave under the enemy turret. This will make sure they lose gold and exp if they are no longer in the lane. It will also reset your lane into a neutral position or the wave will push towards you. In both scenarios you will have a nice minion wave to come back to while your opponent just lost valuable minions.</p>
+            </div>
+            <div class="tabel">
+                <h2>Max Gold per Miniute</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Minutes</th>
+                            <th>Creep Wave</th>
+                            <th>Max Creep Score</th>
+                            <th>Max Creep Gold</th>
+                            <th>Passive Gold</th>
+                            <th>Max GOld</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>475</td>
+                            <td>475</td>
+                        </tr>
+                        <tr>
+                            <td>0.5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>475</td>
+                            <td>475</td>
+                        </tr>
+                        <tr>
+                            <td>1.0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>475</td>
+                            <td>475</td>
+                        </tr>
+                        <tr>
+                            <td>1.5</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>114</td>
+                            <td>475</td>
+                            <td>589</td>
+                        </tr>
+                        <tr>
+                            <td>2.0</td>
+                            <td>2</td>
+                            <td>12</td>
+                            <td>234</td>
+                            <td>514</td>
+                            <td>748</td>
+                        </tr>
+                        <tr>
+                            <td>2.5</td>
+                            <td>3</td>
+                            <td>19</td>
+                            <td>381</td>
+                            <td>553</td>
+                            <td>934</td>
+                        </tr>
+                        <tr>
+                            <td>3.0</td>
+                            <td>4</td>
+                            <td>25</td>
+                            <td>501</td>
+                            <td>592</td>
+                            <td>1093</td>
+                        </tr>
+                        <tr>
+                            <td>3.5</td>
+                            <td>5</td>
+                            <td>31</td>
+                            <td>621</td>
+                            <td>631</td>
+                            <td>1252</td>
+                        </tr>
+                        <tr>
+                            <td>4.0</td>
+                            <td>6</td>
+                            <td>38</td>
+                            <td>768</td>
+                            <td>670</td>
+                            <td>1438</td>
+                        </tr>
+                        <tr>
+                            <td>4.5</td>
+                            <td>7</td>
+                            <td>44</td>
+                            <td>888</td>
+                            <td>709</td>
+                            <td>1597</td>
+                        </tr>
+                        <tr class="yellow">
+                            <td>5.0</td>
+                            <td>8</td>
+                            <td>50</td>
+                            <td>1008</td>
+                            <td>748</td>
+                            <td>1756</td>
+                        </tr>
+                        <tr>
+                            <td>5.5</td>
+                            <td>9</td>
+                            <td>57</td>
+                            <td>1156</td>
+                            <td>787</td>
+                            <td>1943</td>
+                        </tr>
+                        <tr>
+                            <td>6.0</td>
+                            <td>10</td>
+                            <td>63</td>
+                            <td>1276</td>
+                            <td>826</td>
+                            <td>2102</td>
+                        </tr>
+                        <tr>
+                            <td>6.5</td>
+                            <td>11</td>
+                            <td>69</td>
+                            <td>1396</td>
+                            <td>865</td>
+                            <td>2261</td>
+                        </tr>
+                        <tr>
+                            <td>7.0</td>
+                            <td>12</td>
+                            <td>76</td>
+                            <td>1550</td>
+                            <td>904</td>
+                            <td>2454</td>
+                        </tr>
+                        <tr>
+                            <td>7.5</td>
+                            <td>13</td>
+                            <td>82</td>
+                            <td>1676</td>
+                            <td>943</td>
+                            <td>2619</td>
+                        </tr>
+                        <tr>
+                            <td>8.0</td>
+                            <td>14</td>
+                            <td>88</td>
+                            <td>1802</td>
+                            <td>982</td>
+                            <td>2784</td>
+                        </tr>
+                        <tr>
+                            <td>8.5</td>
+                            <td>15</td>
+                            <td>95</td>
+                            <td>1957</td>
+                            <td>1021</td>
+                            <td>2978</td>
+                        </tr>
+                        <tr>
+                            <td>9.0</td>
+                            <td>16</td>
+                            <td>101</td>
+                            <td>2083</td>
+                            <td>1060</td>
+                            <td>3143</td>
+                        </tr>
+                        <tr>
+                            <td>9.5</td>
+                            <td>17</td>
+                            <td>107</td>
+                            <td>2209</td>
+                            <td>1099</td>
+                            <td>3308</td>
+                        </tr>
+                        <tr class="yellow">
+                            <td>10.0</td>
+                            <td>18</td>
+                            <td>114</td>
+                            <td>2365</td>
+                            <td>1138</td>
+                            <td>3503</td>
+                        </tr>
+                        <tr>
+                            <td>10.5</td>
+                            <td>19</td>
+                            <td>120</td>
+                            <td>2491</td>
+                            <td>1177</td>
+                            <td>3668</td>
+                        </tr>
+                        <tr>
+                            <td>11.0</td>
+                            <td>20</td>
+                            <td>126</td>
+                            <td>2617</td>
+                            <td>1216</td>
+                            <td>3833</td>
+                        </tr>
+                        <tr>
+                            <td>11.5</td>
+                            <td>21</td>
+                            <td>133</td>
+                            <td>2773</td>
+                            <td>1255</td>
+                            <td>4028</td>
+                        </tr>
+                        <tr>
+                            <td>12.0</td>
+                            <td>22</td>
+                            <td>139</td>
+                            <td>2905</td>
+                            <td>1294</td>
+                            <td>4199</td>
+                        </tr>
+                        <tr>
+                            <td>12.5</td>
+                            <td>23</td>
+                            <td>145</td>
+                            <td>3037</td>
+                            <td>1333</td>
+                            <td>4370</td>
+                        </tr>
+                        <tr>
+                            <td>13.0</td>
+                            <td>24</td>
+                            <td>152</td>
+                            <td>3200</td>
+                            <td>1372</td>
+                            <td>4572</td>
+                        </tr>
+                        <tr>
+                            <td>13.5</td>
+                            <td>25</td>
+                            <td>158</td>
+                            <td>3332</td>
+                            <td>1411</td>
+                            <td>4743</td>
+                        </tr>
+                        <tr>
+                            <td>14.0</td>
+                            <td>26</td>
+                            <td>164</td>
+                            <td>3464</td>
+                            <td>1450</td>
+                            <td>4914</td>
+                        </tr>
+                        <tr>
+                            <td>14.5</td>
+                            <td>27</td>
+                            <td>171</td>
+                            <td>3627</td>
+                            <td>1489</td>
+                            <td>5116</td>
+                        </tr>
+                        <tr class="yellow">
+                            <td>15.0</td>
+                            <td>28</td>
+                            <td>177</td>
+                            <td>3795</td>
+                            <td>1528</td>
+                            <td>5287</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://twitter.com/riotgames"><div class="icon"><i class="fab fa-twitter"></i></div>Twitter</a>
+                <a href="https://www.facebook.com/RiotGames/"><div class="icon"><i class="fab fa-facebook"></i></div>Facebook</a>
+                <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
+                <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
+            </div>
+            <p>&copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
+        </footer>
+    </div>
 </body>
 </html>
