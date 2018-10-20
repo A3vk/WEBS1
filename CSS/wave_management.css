@@ -13,9 +13,43 @@ main {
     margin: 0 auto;
 }
 
+table {
+    color: white;
+    border-spacing: 0;
+    font-size: 4vw;
+}
+
+th, td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    border-right: 2px solid white;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    border-left: 2px solid white;
+}
+    
+.yellow {
+    background-color: rgb(179, 179, 5);
+}
+
+@media screen and (min-width: 768px) {
+    table {
+        font-size: 2vw;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     img {
         width: 50%;
         margin-left: 25%;
+    }
+
+    table {
+        font-size: 1vw;
     }
 }
