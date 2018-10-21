@@ -1,10 +1,9 @@
-/* START BG */
-.wrapper {
+.background {
+    height: 100%;
     background-repeat: no-repeat;
     background-image: url("../assets/bg/contact_bg_mobile.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 160vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/home_bg_mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 160vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/contact_bg_mobile.jpg");
 }
-/* END BG */
 
 html, body {
     height: 100%;
@@ -46,13 +45,11 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    /* START BG */
-    .wrapper {
+    .background {
         background-repeat: no-repeat;
         background-image: url("../assets/bg/contact_bg_tablet.jpg");
         background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 160vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/contact_bg_tablet.jpg");
     }
-    /* END BG */
 
     .container {
         flex-direction: row;
@@ -60,8 +57,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-    /* START BG */
-    .wrapper {
+    .background {
         background-image: url("../assets/bg/contact_bg.jpg");
         height: 100%; 
 
@@ -70,7 +66,6 @@ a:hover {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    /* END BG */
 
     .card:hover {
         transform: scaleX(1.5) scaleY(1.5);
