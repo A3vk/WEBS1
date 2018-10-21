@@ -72,7 +72,7 @@ a:hover {
     }
     /* END BG */
 
-    .   card:hover {
+    .card:hover {
         transform: scaleX(1.5) scaleY(1.5);
     }
 }
