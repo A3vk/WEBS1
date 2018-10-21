@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/roles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/top.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="background">
         <header>
-            <!-- <div class="logo"><a href="index.html"><img src="../assets/logo.png"></a></div> -->
             <input type="checkbox" id="menu_checkbox">
             <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
             <nav>
@@ -21,23 +21,23 @@
                     <li><a href="index.html">Home</a></li>
                     <li>
                         <input type="checkbox" id="submenu_checkbox">
-                        <a href="roles.html"><label for="submenu_checkbox">Roles <i class="fas fa-caret-down"></i></label></a>
+                        <label for="submenu_checkbox" class="roles">Roles <i class="fas fa-caret-down"></i></label>
                         <ul id="submenu">
                             <li><a href="top.html">Top</a></li>
                             <li><a href="mid.html">Mid</a></li>
                             <li>
                                 <input type="checkbox" id="sub-submenu_checkbox">
-                                <a href="bot.html"><label for="sub-submenu_checkbox">Bot <i class="fas fa-caret-down"></i></label></a>
+                                <label for="sub-submenu_checkbox" class="bot">Bot <i class="fas fa-caret-down"></i></label>
                                 <ul id="sub-submenu">
                                     <li><a href="adc.html">Adc</a></li>
                                     <li><a href="support.html">Support</a></li>
                                 </ul>
                             </li>
-                            <li><a href="jungle.html">Jungle</a></li>
+                            <li class="last"><a href="jungle.html">Jungle</a></li>
                         </ul>
                     </li>
                     <li><a href="patch.html">Patch</a></li>
-                    <li><a href="algemeen.html">Algemeen</a></li>
+                    <li><a href="wave_management.html">Wave Management</a></li>
                     <li><a href="bugs.html">Bugs</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -46,10 +46,39 @@
         <main>
             <div class="uitleg">
                 <h2>Top Lane</h2>
-                <p>Top lane can be a hard lane to wrap your head around at first. With so many different possibilities and options, it is one of the most diverse lanes in the game. At the same time top lane is the most isolated lane in comparison to the others. This results in the number of ganks being lower than in other lanes causing individual skill to shine more in the top lane.  All of this is great as long as you manage to win against your lane opponent. But if you lose you will probably have a rough game ahead of you. </p>
-                <p>Being behind in top lane is the worst thing that can happen to you. You won't be able to fight or contest you lane opponent any longer resulting in a loss of vision, minions and overall lane control. The single best thing you can do when you behind is building defensive stats. These stats cause you to be relevant to your team in later fights by soaking damage for the rest of them and make it easier for you to survive against your already ahead lane opponent. </p>
-                <p>The champions that are mostly played in top lanes are tanks or fighters. Tanks usually are champions with more defensive abilities and lots of crowd control. They tend to build only defensive items making them a nightmare to bring down in team fights while making sure their enemies won't get away from them by using their crowd control. Fighters, on the other hand, are champions who excel a dueling 1 on 1. Their abilities tend to have a more aggressive focus with maybe 1 defensive spell in the mix. These champions normally build a mix of defensive and offensive items. This ratio tends to shift depending on if they are behind or ahead. While team fighting it is their job to attack the enemies carry and is possible kill them. Lastly there is the more uncommon top lane picks the damage dealers. Champions that are damage dealers in the top lane excel at dissing out enormous amounts of damage at the cost of survivability. They only build offensive items and need to get ahead early to stay relevant throughout the game. Once the team fighting starts they tend to stay behind more looking for a safe opening in which they can start throwing out all their damage. </p>
-                <p>The summoner spells that are normally used in top lane are flash and teleport. Teleport gives you the possibility to help your team anywhere on the map if they need it. Because of this you can be in your isolated top lane while still being able to help your team anywhere on the map the moment they need it. In some cases you can decide you take ignite over teleport. By doing so you lose the potential to help your team out when needed but you gain much more kill potential making room for you to get fed early game and carry your team to victory. In rare cases you might want to change one of your summoners spells for ghost. This allows champions that are easily kited to counter that.</p>
+                <p>
+                    Top lane can be a hard lane to wrap your head around at first. With so many different possibilities and options, 
+                    it is one of the most diverse lanes in the game. At the same time top lane is the most isolated lane in comparison 
+                    to the others. This results in the number of ganks being lower than in other lanes causing individual skill to 
+                    shine more in the top lane.  All of this is great as long as you manage to win against your lane opponent. But if 
+                    you lose you will probably have a rough game ahead of you. 
+                </p>
+                <p>
+                    Being behind in top lane is the worst thing that can happen to you. You won't be able to fight or contest you lane 
+                    opponent any longer resulting in a loss of vision, minions and overall lane control. The single best thing you can do 
+                    when you behind is building defensive stats. These stats cause you to be relevant to your team in later fights by 
+                    soaking damage for the rest of them and make it easier for you to survive against your already ahead lane opponent.
+                </p>
+                <p>
+                    The champions that are mostly played in top lanes are tanks or fighters. Tanks usually are champions with more 
+                    defensive abilities and lots of crowd control. They tend to build only defensive items making them a nightmare to 
+                    bring down in team fights while making sure their enemies won't get away from them by using their crowd control. 
+                    Fighters, on the other hand, are champions who excel a dueling 1 on 1. Their abilities tend to have a more aggressive 
+                    focus with maybe 1 defensive spell in the mix. These champions normally build a mix of defensive and offensive items. 
+                    This ratio tends to shift depending on if they are behind or ahead. While team fighting it is their job to attack the 
+                    enemies carry and is possible kill them. Lastly there is the more uncommon top lane picks the damage dealers. Champions 
+                    that are damage dealers in the top lane excel at dissing out enormous amounts of damage at the cost of survivability. 
+                    They only build offensive items and need to get ahead early to stay relevant throughout the game. Once the team fighting 
+                    starts they tend to stay behind more looking for a safe opening in which they can start throwing out all their damage. 
+                </p>
+                <p>
+                    The summoner spells that are normally used in top lane are flash and teleport. Teleport gives you the possibility to 
+                    help your team anywhere on the map if they need it. Because of this you can be in your isolated top lane while still 
+                    being able to help your team anywhere on the map the moment they need it. In some cases you can decide you take ignite 
+                    over teleport. By doing so you lose the potential to help your team out when needed but you gain much more kill potential 
+                    making room for you to get fed early game and carry your team to victory. In rare cases you might want to change one of 
+                    your summoners spells for ghost. This allows champions that are easily kited to counter that.
+                </p>
             </div>
             <div class="champions">
                 <h2>Top Lane Champions</h2>
@@ -57,259 +86,465 @@
                     <img src="../assets/champions/Top/aatrox.png">
                     <div class="tekst">
                         <h3>Aatrox</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            Aatrox is a strong fighter with loads of crowd control. 
+                            With 3 nock ups and a zone ability that can pull people back. He excels at keeping
+                            his victims locked down while he smashes them into the ground. Using his dash ability to quickly 
+                            engage or disengage out of combat whenever he sees fit. His ultimate gives him a 
+                            bunch of attack damage and movement speed, if he perishes while his ultimate is still active 
+                            he will revive with a portion of his health.
+                        </p>
+                        
                     </div>
                 </div>
                 <div class="card"> <!-- CAMILLE -->
                     <img src="../assets/champions/Top/camille.png">
                     <div class="tekst">
                         <h3>Camille</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            More assassin that fighter Camille preys on the weak and isolates them before striking 
+                            them down. Her main ability is a 2 combo hit where the 2nd hit can deal true damage 
+                            with a little bit of patience. Her long range dash ability together with her slow will 
+                            make sure nobody will get away from her. Her ultimate ability isolates a target by locking 
+                            them up cage that they can not get out of while she pushes all other enemy out giving her time 
+                            for the kill. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- CHO'GATH -->
                     <img src="../assets/champions/Top/cho'gath.png">
                     <div class="tekst">
                         <h3>Cho'Gath</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A giant otherworldly void monster Cho'Gath devours everything in it’s path and grows bigger and stronger 
+                            with each kill. His main abilities are a long ranged aoe knock up that locks his targets down. 
+                            His scream will silence his enemies and slow them leaving them easy prey for his ultimate. 
+                            When using his ultimate Cho'Gath will devour his enemy dealing tons of damage to his enemy if this kills 
+                            them he will gain more health an grow larger in size. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- DARIUS -->
                     <img src="../assets/champions/Top/darius.png">
                     <div class="tekst">
                         <h3>Darius</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A strong Noxian general he wields his giant axe executing anybody who will dare to oppose him. 
+                            Darius excels at longer fights and executing weak enemies of the field of battle. 
+                            Using his grab he pulls in his victims before using his slow to make sure they will not get away. 
+                            Using his massive axe he spins dealing damage and healing his self for a portion of the damage. 
+                            And when an enemy is low he will use his ultimate to execute them. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- DR. MUNDO -->
                     <img src="../assets/champions/Top/dr._mundo.png">
                     <div class="tekst">
                         <h3>Dr. Mundo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A giant hulking purple mad man Dr. Mundo kill anybody he can get his hands on for his sick operations. 
+                            He throws his giant meat cleaver slowing anybody he hits. 
+                            When he gets closes he burns himself and anything around it while using steroids to hit you just that much harder. 
+                            The moment this mad man will get close do dying he will use his ultimate and gains increased movement speed as well as regenerating 
+                            tons of health.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- FIORA -->
                     <img src="../assets/champions/Top/fiora.png">
                     <div class="tekst">
                         <h3>Friora</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            The strongest dueler in all of Runeterra Fiora excels at dealing with opponents 1 at a time picking them apart. 
+                            While fighting Fiora will always look for weak spot on her enemy to strike. W
+                            hen she finds 1 she lunges in striking it and dealing true damage. 
+                            When in trouble She will parry anything the enemy throws at her before returning the favor. 
+                            When facing an important target she will look all vulnerable spots before striking them all down.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- GANGPLANK -->
                     <img src="../assets/champions/Top/gangplank.png">
                     <div class="tekst">
                         <h3>Gangplank</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            Angry about the los of his city Bilgewater GankPlank uses his pistol, cutlass and exploding barrels 
+                            on all who are in his way hoping to reclaim what was once his. 
+                            On the field of battle he places barrels all over the place while waiting for someone to get close 
+                            before shooting them and exploding them in a glorious fire ball. And when the time is just right his 
+                            ultimate will call upon his mighty ship to bombard the battlefield with cannonballs.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- GAREN -->
                     <img src="../assets/champions/Top/garen.png">
                     <div class="tekst">
                         <h3>Garen</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A strong defender Garen will stop at nothing to protect Demacia from Noxian infiltrations. 
+                            He uses his mighty broadsword to spin around on his enemy causing severe damage. 
+                            With a special strike he silences his enemies making them unable to perform magic this combined 
+                            with his magic resisting armor is a force to be reckon with. When he activates his ultimate he 
+                            calls forward a riotous sword from the heaves to smite down his foes. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- GNAR -->
                     <img src="../assets/champions/Top/gnar.png">
                     <div class="tekst">
                         <h3>Gnar</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            An ancient yordle Gnar is cute and playful but get him angry and he will transform into a hulking beast ready to rip you apart. 
+                            When he is in his little form Gnar uses high mobility and range attacks to keep his enemies at bay slowly building up his rage. 
+                            When his rage becomes too high he will transform and smash everything in his way. The moment he activates his ultimate he will 
+                            smash everything in front of him into a wall stunning everything. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- ILLAOI -->
                     <img src="../assets/champions/Top/illaoi.png">
                     <div class="tekst">
                         <h3>Illaoi</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A prophet of the great kraken Illaoi uses her Idol of the great kraken to fight anybody in her way. 
+                            While fighting she will passively spawn great tentacles on nearby walls slapping her enemies whenever 
+                            they get close. She uses the idol to rip out her foes spirit and cursing them so that tentacles spawn 
+                            around them. If she activates her ultimate she will jump into air crashing down and hitting everybody 
+                            spawning a tentacle for each enemy hit.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- IRELIA -->
                     <img src="../assets/champions/Top/irelia.png">
                     <div class="tekst">
                         <h3>Irelia</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            An elegant blade dancer Irellia is the leader of the resistance against the Noxian ocupations of her homeland. 
+                            While flighting She uses the blades that float around her to strike down opponents. She dashes from enemy to enemy 
+                            confusing her opponents on what her next move will be . When se activates her ultimate she will throw out a large 
+                            number of blades disarming and slowing everybody caught in them.  
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- JAX -->
                     <img src="../assets/champions/Top/jax.png">
                     <div class="tekst">
                         <h3>Jax</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            The last known weapon master of Icathia Jax wields a lamp post to fight his opponents is the home 
+                            it will give them a more even playing ground against him. On the field of battle He eagerly jumps 
+                            on his opponents hitting them with his lamppost before dodging everything they will throw at him.  
+                            When his ultimate is activates his resolve strengthens and Jax gains armor and magic resist. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- JAYCE -->
                     <img src="../assets/champions/Top/jayce.png">
                     <div class="tekst">
                         <h3>Jayce</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A brilliant inventor of Piltover Jayce created a hextech hammer than can transform into a crossbow to 
+                            defend his city. His ultimate lets him changes stances switching between hammer and crossbow form. 
+                            While fighting he will poke at his opponents injuring them before engaging with his hammer and smashing 
+                            them into the ground. Jayce excels in all situations cause of his great versatility.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- KAYLE -->
                     <img src="../assets/champions/Top/kayle.png">
                     <div class="tekst">
                         <h3>Kayle</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            An angelelic warrior Kayle will burn everybody who deserves it in righteous fire. 
+                            While fighting she will set her blade on fire giving her ranges attacks that deal area of effect damage 
+                            for a short time. When her allies are in danger she will heal them and granting them move speed to get 
+                            out of harms way. If she decides the use her ultimate Kayle will bless a ally granting them a shield 
+                            that prevents all damage for a short duration. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- KENNEN -->
                     <img src="../assets/champions/Top/kennen.png">
                     <div class="tekst">
                         <h3>Kennen</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            The only yordle in the Kinkou clan Kennen uses his lighting fast speed and reflexes to out speed 
+                            his enemies and keep them at their toes at all times. While fighting he transform into a ball of 
+                            thunder speeding trough his opponents dealing damage. Throwing shuriken and eventually stunning his opponent. 
+                            Kennen can use his ultimate to create a electric storm around him damaging and stunning all enemies that are 
+                            caught in it. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- KLED -->
                     <img src="../assets/champions/Top/kled.png">
                     <div class="tekst">
                         <h3>Kled</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A brave and fearless Noxian warrior Kled rides his trusty companion Skaarl into battle at every opportunity. 
+                            When fighting his opponents Kled can throw bear traps pulling his opponents closer towards him. 
+                            But when his health will get to low his cowardly companion Skaarl will run away leaving Kled to fight on his own. 
+                            In this state Kled will have reduced movement speed. His ultimate ability lets him charge into battle form great 
+                            distances. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- MAPLPHITE -->
                     <img src="../assets/champions/Top/malphite.png">
                     <div class="tekst">
                         <h3>Malphite</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A massive hulking stone creature Malphite is the last of his kind after a great disaster happened. 
+                            Being made out of stone Malphite has an thick armor protecting him from damage. 
+                            If the armor breaks it will regenerate after a few seconds. 
+                            While fighting he will crush all that in his using his fist. 
+                            His ultimate lets him rush forward into battle knocking everybody up that is caught in it. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- MAOKAI -->
                     <img src="../assets/champions/Top/maokai.png">
                     <div class="tekst">
                         <h3>Maokai</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A rageful treant Maokai is the last survivor after a magical calamity claimed his homelands. 
+                            Maokai can throw little saplings of him self around that will charge his opponents and latches on to them 
+                            before exploding. While fighting he will uses his roots to stun enemies to make sure they will not get away. 
+                            His ultimate ability summons a wave of roots entangling anybody who gets caught in them. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- MORDEKAISER -->
                     <img src="../assets/champions/Top/mordekaiser.png">
                     <div class="tekst">
                         <h3>Mordekaiser</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A hateful spirit brought to life by necromantic forces Mordekaiser haunts the Shadow Isles enslaving all 
+                            who cross him. While fighting he can use his magic to syphon the life force of an enemy creating a shield 
+                            around him. He will smack anybody who stands before him with his massive mace. When he cast his ultimate 
+                            he will curse his opponent dealing damage over time and if they die enslaving their soul to his cause. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- NASUS -->
                     <img src="../assets/champions/Top/nasus.png">
                     <div class="tekst">
                         <h3>Nasus</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            An ancient ascended being from Shurima Nasus has returned to his newly risen homeland to protect it. 
+                            Nasus wither his opponents slowing them massively to ensure they will not get away from his wrath. 
+                            While fighting in nasus kill a target he syphons the life out of them making his attacks stronger. 
+                            When he activates his ultimate he unleashes a sandstorm that damage everybody around him while he himself 
+                            gets increased health. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- OLAF -->
                     <img src="../assets/champions/Top/olaf.png">
                     <div class="tekst">
                         <h3>Olaf</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A strong an undefeated warrior Olaf searches the land for an opponent to defeat him after a prophecy 
+                            foretold his peaceful death. While in combat Olaf will become stronger the closer he is to death granting 
+                            him increased attack speed. He can throw is axes to slow people to make sure they will not get away from him. 
+                            When his ultimate is activated Olaf becomes filled with rage making him immune to all forms of crowd control. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- ORNN -->
                     <img src="../assets/champions/Top/ornn.png">
                     <div class="tekst">
                         <h3>Ornn</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A freljord deity Orn smiths away in the depths of Hearth-Home creating the most wonderful items. 
+                            Orn charges in before knocking up his opponents by smashing his hammer into the ground causing a pillar of earth to erupt 
+                            beneath them. Spewing fire at his enemies leaving them vulnerable to attacks. His ultimate summons a massive fire spirit 
+                            that rushes to Orns help that when send back out will cause knock ups. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- PANTHEON -->
                     <img src="../assets/champions/Top/pantheon.png">
                     <div class="tekst">
                         <h3>Pantheon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            The incarnation of the Aspect of War Pantheon seeks out enemies to his homeland killing anybody who dares to oppose him. 
+                            Pantheon jumps on his opponents stunning them before unleashing a flurry of strikes with his spear. 
+                            If the enemies as much as runs he will throw his spear ensuring the kill. 
+                            His ultimate lets him jump high into the air before crashing down on his enemies causing damage. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- POPPY -->
                     <img src="../assets/champions/Top/poppy.png">
                     <div class="tekst">
                         <h3>Poppy</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            Wielding the legendary hammer of Orlon Poppy seeks the original owner of the artifact while pushing back the 
+                            kingdoms enemies. On the field of battle Poppy’s steadfast presence will stop every attempt to dash around her. 
+                            Charging in herself to smash her enemies using the giant hammer. 
+                            When her ultimate is activated she charges up her hammer before unleashing a massive shockwave that will sent 
+                            enemies flying. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- QUINN -->
                     <img src="../assets/champions/Top/quinn.png">
                     <div class="tekst">
                         <h3>Quinn</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            An elite ranger knight of Demacia Quin together with her eagle Valor will shootdown anybody who opposes Demcia. 
+                            Her ultimate allows Quin too use Valor to fly around allowing her to move at greater speeds reinforcing allies 
+                            wherever needed. While fighting Valor will mark Quins target allowing her to deal more damage to them. 
+                            Valor can also blind enemies leaving them vulnerable for Quin to shoot down. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- RENEKTON -->
                     <img src="../assets/champions/Top/renekton.png">
                     <div class="tekst">
                         <h3>Renekton</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A ascended being of Shurima and Nasus his brother Renekton searches his brother to kill him blaming him for 
+                            the years he spent buried beneath the sands. When fighting Renekton will use his giant clear to spin around 
+                            and damage everything around him. Dashing in and out of combat while hitting a devastating stun Renekton is 
+                            a fierce warrior. His ultimate makes him lagers and gives him bonus health while dealing damage around him. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- RIVEN -->
                     <img src="../assets/champions/Top/riven.png">
                     <div class="tekst">
                         <h3>Riven</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A former Noxian captain Riven was given the legendary runic blade but her faith in the empire was shattered. 
+                            Riven excels in high mobility dashing around while doing small jumps with her runic blade to deal damage. 
+                            A powerful ki burst can stun her opponents leaving them wide open for her to strike down. 
+                            Her ultimate will restore her broken blade giving her increased damage before she sends out a strong surge 
+                            of energy dealing damage. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- RUMBLE -->
                     <img src="../assets/champions/Top/rumble.png">
                     <div class="tekst">
                         <h3>Rumble</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A small yordle inventor Rumble created a devastating mech suit from nothing but scrap making himself into a 
+                            deadly weapon. His mech suit is equipped with all kinds of deadly weapons using a flamethrower to roast 
+                            his enemies while piercing them with an electrified harpoon. His ultimate fires a barrage of rockets that 
+                            scorch the earth leaving fire in its wake damaging everybody who is in the area.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- SHEN -->
                     <img src="../assets/champions/Top/shen.png">
                     <div class="tekst">
                         <h3>Shen</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            The leader of the Kinkou clan Shen walks both the spirit and mortal realms enforcing equilibrium between them. 
+                            When in combat Shen can call upon his giant Spirit blade sending it forward to damage and slow opponents. 
+                            Using his spirit blade he can distort reality making all incoming attacks miss. Using his ultimate Shen can shield an 
+                            ally from harm while shortly there after teleport to their location. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- SINGED -->
                     <img src="../assets/champions/Top/singed.png">
                     <div class="tekst">
                         <h3>Singed</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A Zaunite alchemist Singed loos to have lost his humanity while pushing the boundary of knowledge. 
+                            Wherever Singed goes he leaves behind a toxic could of poison dealing damage to anybody foolish enough to 
+                            walk into it. Enemies trying to run away from him will be stopped with mega adhesive slowing them before 
+                            Singed fling  them back into his poison. His ultimate has him drinking a potion that increases all of his stats. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- SION -->
                     <img src="../assets/champions/Top/sion.png">
                     <div class="tekst">
                         <h3>Sion</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A former Noxian warrior Sion was resurrected to serve the great empire once again of the fields of battle. 
+                            Scion uses his massive axe to charge up a strong hit knocking up all who are caught in it. Syphoning life 
+                            from his death victims Sion will gain increased health from anything he kills. His ultimate has him charging 
+                            into battle blinded by rage knocking up the first enemy he hits. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- TEEMO -->
                     <img src="../assets/champions/Top/teemo.png">
                     <div class="tekst">
                         <h3>Teemo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A Bandle scout Teemo is a yordle that takes great pride in following the Badle scout’s code even if it brings 
+                            more trouble than it is worth. Teemo attacks enemy with his blow pipe coating his darts in toxins that deal 
+                            damage over time or blind his target. Using his fast movement speed to stay at a safe distance. 
+                            His ultimate has him setting up poison mushrooms that poison enemies who stand on them. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- TRUNDLE -->
                     <img src="../assets/champions/Top/trundle.png">
                     <div class="tekst">
                         <h3>Trundle</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A big hulking troll living in the Freljord Trundle wields a big shard of true ice he will smash anybody who 
+                            is foolish enough o wander into his territory.  Trundle can turn any environment into his terrain slowing 
+                            enemies while giving movement speed and attack speed to himself. Creating a huge pillar of ice he will block 
+                            anybody trying to escape from him. His ultimate lets him steal armor magic resist and health from a target.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- TRYNDAMERE -->
                     <img src="../assets/champions/Top/tryndamere.png">
                     <div class="tekst">
                         <h3>Tryndamere</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A rage filled barbarian that used to seek revenge for the slaughter of his clan Tryndamere now has found 
+                            new purpose in his companion Ashe. Tryndamere’s furry knows no bounds as he gains furry with each attack 
+                            increasing his critical change. Spinning onto the field of battle a mere shout from him is enough to slow 
+                            his opponent. His ultimate makes rage and furry so strong that he will no longer be able to die for a few 
+                            seconds.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- URGOT -->
                     <img src="../assets/champions/Top/urgot.png">
                     <div class="tekst">
                         <h3>Urgot</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A powerful Noxian leader Urgot was betrayed and imprisoned far beneath the earth in Zaun’s prison the Dredge. 
+                            Half man half machine Urgot can detonate his legs firing a powerful shotgun blast dealing damage. 
+                            While unloading all of his weapons onto his targets any enemy that is running away will get caught in a 
+                            corrosive blast slowing them. His ultimate will send out a chem-drill reeling them back to Urgot and 
+                            executing them.
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- VLADIMIR -->
                     <img src="../assets/champions/Top/vladimir.png">
                     <div class="tekst">
                         <h3>Vladimir</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            A powerful Hemomancer Vladimir has a never ending thirst for mortal blood bleeding his enemies dry at every 
+                            opportunity. Vladimir will drain the blood from his victims restoring health to himself. When in serious 
+                            danger he will dissolve into a mere puddle of blood protecting him from any damage. His ultimate unleashes 
+                            a plague that causes enemies to take increased damage before exploding and dealing damage itself. 
+                        </p>
                     </div>
                 </div>
                 <div class="card"> <!-- YORICK -->
                     <img src="../assets/champions/Top/yorick.png">
                     <div class="tekst">
                         <h3>Yorick</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum tortor ac felis dapibus, sit amet aliquet dolor finibus. Vestibulum dui quam, pulvinar nec vulputate a, congue eu neque. Donec dignissim nunc augue, ac porta sapien varius et. Duis suscipit erat vitae turpis commodo, semper scelerisque lorem mollis. Nullam et justo purus. Sed sodales diam id lacinia gravida. Etiam et nibh sit amet magna porta finibus eget vitae sem.</p>
+                        <p>
+                            The last of a long-forgotten order Yorick was cursed with power over the death leaving him with only corpses 
+                            as companions. Whenever Yoric kills an enemy a grave will emerge from the ground. When the time is right 
+                            the graves erupt releasing mist walkers that will attack is enemies. His ultimate will summon the lady of 
+                            mist causing Yoric to deal bonus damage to her target while she raises mist walkers from nearby graves. 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -321,7 +556,10 @@
                 <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
                 <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
             </div>
-            <p>&copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
+            <p>
+                &copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, 
+                or registered trademarks of Riot Games, Inc.
+            </p>
         </footer>
     </div>
 </body>

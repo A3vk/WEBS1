@@ -7,12 +7,7 @@ body {
     background-color: black;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6, a, label {
     font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -26,14 +21,20 @@ header {
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
 }
 
-header li {
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
     list-style: none;
 }
 
-label {
+header label {
     display: flex;
 }
 
@@ -45,6 +46,7 @@ label {
 .menu_icon {
     color: gold;
     font-size: 10vw;
+    margin-left: 10px;
 }
 
 nav {
@@ -63,7 +65,7 @@ nav {
     transition: opacity .5s;
 }
 
-nav a {
+nav a, nav label {
     text-decoration: none;
     color: gold;
     font-size: 5vw;
@@ -107,4 +109,110 @@ footer {
 
 footer p {
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    /* MENU */
+    .logo img {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .menu_icon {
+        font-size: 5vw;
+    }
+
+    nav a, nav label {
+        font-size: 3vw;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 2vw;
+    }
+    
+    .social .icon {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* HOVER MENU */
+    header {
+        flex-direction: row;
+    }
+
+    .menu_icon {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .logo img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    nav {
+        width: 80%;
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a, nav label {
+        font-size: 1.5vw;
+    }
+
+    nav ul i {
+        visibility: hidden;
+    }
+
+    #submenu, #sub-submenu {
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+
+    .roles:hover ~ #submenu, #submenu:hover {
+        opacity: 1;
+        height: auto;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .bot:hover ~ #sub-submenu, #sub-submenu:hover {
+        opacity: 1;
+        height: auto;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .last {
+        padding-bottom: 50px;
+    }
+
+    nav a:hover {
+        color: rgb(150, 127, 0);
+    }
+
+    nav ul li a:hover:after {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 1vw;
+    }
+    
+    .social .icon {
+        font-size: 2vw;
+    }
 }

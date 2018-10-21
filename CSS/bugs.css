@@ -1,0 +1,156 @@
+.background {
+    background-repeat: no-repeat;
+    background-image: url("../assets/bg/bug_bg_mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 130vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/bug_bg_mobile.jpg");
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+
+form label {
+    color: white;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 10px;
+}
+
+.verplicht {
+    color: red;
+    font-size: 1.5em;
+}
+
+/* SELECT STYLE */
+form select {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+.champion {
+    display: flex;
+}
+
+/* CHECKBOX STYLE */
+.checkbox {
+    -webkit-appearance: none;
+    background-color: #131650;
+	border: 1px solid rgb(165, 141, 2);
+	padding: 8px;
+    position: relative;
+}
+
+.checkbox::after {
+	content: '\2713';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #3e46ee;
+}
+
+.checkbox:checked::after {
+	color: white;
+}
+
+.champion select {
+    visibility: hidden;
+}
+
+.checkbox:checked ~ select {
+    visibility: visible;
+}
+
+.champion select {
+    margin-left: 25px;
+    margin-top: 3px;
+}
+
+/* INPUT TEXT STYLE */
+input[type="text"] {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+/* TEXTAREA STYLE */
+textarea {
+    min-height: 250px;
+    max-width: 100%;
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+/* INPUT URL STYLE */
+input[type="url"] {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+}
+
+/* BUTTON STYLE */
+input[type="submit"] {
+    background-color: #131650;
+    border: 1px solid rgb(165, 141, 2);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .background {
+        background-repeat: no-repeat;
+        background-image: url("../assets/bg/bug_bg_tablet.jpg");
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0 , 0.1) 0%, rgba(0, 0, 0, 1) 90vw, rgba(0, 0, 0, 1) 100%), url("../assets/bg/bug_bg_tablet.jpg");
+    }
+
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .background {
+        background-image: url("../assets/bg/bug_bg.jpg");
+        height: 100%; 
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form {
+        width: 40%;
+    }
+
+    .where {
+        width: 200px;;
+    }
+
+    .type {
+        width: 350px;
+    }
+
+    .times {
+        width: 230px;
+    }
+
+    /* INPUT URL STYLE */
+    input[type="url"] {
+        width: 30%;
+    }
+
+    /* BUTTON STYLE */
+    input[type="submit"] {
+        width: 10vw;
+        margin: 0 auto;
+    }
+}

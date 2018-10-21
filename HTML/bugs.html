@@ -6,51 +6,271 @@
     <title>LoL - Bugs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/bugs.css" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <!-- <div class="logo"><a href="index.html"><img src="../assets/logo.png"></a></div> -->
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <input type="checkbox" id="submenu_checkbox">
-                    <a href="roles.html"><label for="submenu_checkbox">Roles <i class="fas fa-caret-down"></i></label></a>
-                    <ul id="submenu">
-                        <li><a href="top.html">Top</a></li>
-                        <li><a href="mid.html">Mid</a></li>
-                        <li>
-                            <input type="checkbox" id="sub-submenu_checkbox">
-                            <a href="bot.html"><label for="sub-submenu_checkbox">Bot <i class="fas fa-caret-down"></i></label></a>
-                            <ul id="sub-submenu">
-                                <li><a href="adc.html">Adc</a></li>
-                                <li><a href="support.html">Support</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="jungle.html">Jungle</a></li>
-                    </ul>
-                </li>
-                <li><a href="patch.html">Patch</a></li>
-                <li><a href="algemeen.html">Algemeen</a></li>
-                <li><a href="bugs.html">Bugs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <div class="social">
-            <a href="https://twitter.com/riotgames"><div class="icon"><i class="fab fa-twitter"></i></div>Twitter</a>
-            <a href="https://www.facebook.com/RiotGames/"><div class="icon"><i class="fab fa-facebook"></i></div>Facebook</a>
-            <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
-            <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
-        </div>
-        <p>&copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.</p>
-    </footer>
+    <div class="background">
+        <header>
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox"><div class="logo"><img src="../assets/logo.png"></div><i class="fas fa-bars menu_icon"></i></label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <input type="checkbox" id="submenu_checkbox">
+                        <label for="submenu_checkbox" class="roles">Roles <i class="fas fa-caret-down"></i></label>
+                        <ul id="submenu">
+                            <li><a href="top.html">Top</a></li>
+                            <li><a href="mid.html">Mid</a></li>
+                            <li>
+                                <input type="checkbox" id="sub-submenu_checkbox">
+                                <label for="sub-submenu_checkbox" class="bot">Bot <i class="fas fa-caret-down"></i></label>
+                                <ul id="sub-submenu">
+                                    <li><a href="adc.html">Adc</a></li>
+                                    <li><a href="support.html">Support</a></li>
+                                </ul>
+                            </li>
+                            <li class="last"><a href="jungle.html">Jungle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="patch.html">Patch</a></li>
+                    <li><a href="wave_management.html">Wave Management</a></li>
+                    <li><a href="bugs.html">Bugs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form class="report">
+                <label>Where did you run into the bug? <span class="verplicht">*</span></label>
+                <select class="where">
+                    <option></option>
+                    <option>Installation</option>
+                    <option>Launching the client</option>
+                    <option>Login screen</option>
+                    <option>Landing screen</option>
+                    <option>Profile</option>
+                    <option>Ranked</option>
+                    <option>Match History</option>
+                    <option>Collection</option>
+                    <option>Loot</option>
+                    <option>Clubs</option>
+                    <option>Champion Details</option>
+                    <option>Store</option>
+                    <option>Client settings</option>
+                    <option>Friends list</option>
+                    <option>Chat</option>
+                    <option>Game Select</option>
+                    <option>Party formation screen</option>
+                    <option>Champion select screen</option>
+                    <option>In-game</option>
+                    <option>Post-game screen</option>
+                    <option>other</option>
+                </select>
+                <label>Can you let us know what type of bug you saw? <span class="verplicht">*</span></label>
+                <select class="type">
+                    <option></option>
+                    <optgroup label="Problems loading into game">
+                        <option>I found a typo or debug string</option>
+                        <option>Sounds weren't working properly</option>
+                        <option>I never actually loaded into the match</option>
+                        <option>I was returned to the reconnect screen</option>
+                        <option>Other</option>
+                    </optgroup>
+                    <optgroup label="I'm experiencing issues in-game">
+                        <option>I had lag or FPS issues</option>
+                        <option>I found a typo or an incorrect link</option>
+                        <option>My game settings weren't working properly</option>
+                        <option>A champion wasn't working properly</option>
+                        <option>An item wasn't working properly</option>
+                        <option>Part of a Featured Game Mode wasn't working properly</option>
+                        <option>My game didn't end properly</option>
+                    </optgroup>
+                    <optgroup label="Something looked visually wrong">
+                        <option>Part of the map looked weird</option>
+                        <option>Part of the interface looked weird</option>
+                        <option>An NPC unit looked weird</option>
+                    </optgroup>
+                </select>
+                <label>How many times did you see the bug happen?</label>
+                <select class="times">
+                    <option></option>
+                    <option>I only saw the bug once</option>
+                    <option>I saw the bug a few times</option>
+                    <option>I saw the bug a bunch of times</option>
+                    <option>The bug was happening constantly</option>
+                </select>
+                <label>Was this bug related to a specific champion?</label>
+                <div class="champion">
+                    <input type="checkbox" class="checkbox">
+                    <select>
+                        <option></option>
+                        <option>Aatrox</option>
+                        <option>Ahri</option>
+                        <option>Akali</option>
+                        <option>Alistar</option>
+                        <option>Amumu</option>
+                        <option>Anivia</option>
+                        <option>Annie</option>
+                        <option>Ashe</option>
+                        <option>Aurelion Sol</option>
+                        <option>Azir</option>
+                        <option>Bard</option>
+                        <option>Blitzcrank</option>
+                        <option>Brand</option>
+                        <option>Braum</option>
+                        <option>Caitlyn</option>
+                        <option>Camille</option>
+                        <option>Cassiopeia</option>
+                        <option>Cho'Gath</option>
+                        <option>Corki</option>
+                        <option>Darius</option>
+                        <option>Diana</option>
+                        <option>Dr. Mundo</option>
+                        <option>Draven</option>
+                        <option>Ekko</option>
+                        <option>Elise</option>
+                        <option>Evelynn</option>
+                        <option>Ezreal</option>
+                        <option>Fiddlesticks</option>
+                        <option>Fiora</option>
+                        <option>Fizz</option>
+                        <option>Galio</option>
+                        <option>Gangplank</option>
+                        <option>Garen</option>
+                        <option>Gnar</option>
+                        <option>Gragas</option>
+                        <option>Graves</option>
+                        <option>Hecarim</option>
+                        <option>Heimerdinger</option>
+                        <option>Illaoi</option>
+                        <option>Irelia</option>
+                        <option>Ivern</option>
+                        <option>Janna</option>
+                        <option>Jarvan IV</option>
+                        <option>Jax</option>
+                        <option>Jayce</option>
+                        <option>Jhin</option>
+                        <option>Jinx</option>
+                        <option>Kai'Sa</option>
+                        <option>Kalista</option>
+                        <option>Karma</option>
+                        <option>Karthus</option>
+                        <option>Kassadin</option>
+                        <option>Katarina</option>
+                        <option>Kayle</option>
+                        <option>Kayn</option>
+                        <option>Kennen</option>
+                        <option>Kha'Zix</option>
+                        <option>Kindred</option>
+                        <option>Kled</option>
+                        <option>Kog'Maw</option>
+                        <option>LeBlanc</option>
+                        <option>Lee Sin</option>
+                        <option>Leona</option>
+                        <option>Lissandra</option>
+                        <option>Lucian</option>
+                        <option>Lulu</option>
+                        <option>Lux</option>
+                        <option>Malphite</option>
+                        <option>Malzahar</option>
+                        <option>Maokai</option>
+                        <option>Master Yi</option>
+                        <option>Miss Fortune</option>
+                        <option>Mordekaiser</option>
+                        <option>Morgana</option>
+                        <option>Nami</option>
+                        <option>Nasus</option>
+                        <option>Nautilus</option>
+                        <option>Nidalee</option>
+                        <option>Nocturne</option>
+                        <option>Nunu & Willump</option>
+                        <option>Olaf</option>
+                        <option>Orianna</option>
+                        <option>Ornn</option>
+                        <option>Pantheon</option>
+                        <option>Poppy</option>
+                        <option>Pyke</option>
+                        <option>Quinn</option>
+                        <option>Rakan</option>
+                        <option>Rammus</option>
+                        <option>Rek'Sai</option>
+                        <option>Renekton</option>
+                        <option>Rengar</option>
+                        <option>Riven</option>
+                        <option>Rumble</option>
+                        <option>Ryze</option>
+                        <option>Sejuani</option>
+                        <option>Shaco</option>
+                        <option>Shen</option>
+                        <option>Shyvana</option>
+                        <option>Singed</option>
+                        <option>Sion</option>
+                        <option>Sivir</option>
+                        <option>Skarner</option>
+                        <option>Sona</option>
+                        <option>Soraka</option>
+                        <option>Swain</option>
+                        <option>Syndra</option>
+                        <option>Tahm Kench</option>
+                        <option>Taliyah</option>
+                        <option>Talon</option>
+                        <option>Taric</option>
+                        <option>Teemo</option>
+                        <option>Thresh</option>
+                        <option>Tristana</option>
+                        <option>Trundle</option>
+                        <option>Tryndamere</option>
+                        <option>Twisted Fate</option>
+                        <option>Twitch</option>
+                        <option>Udyr</option>
+                        <option>Urgot</option>
+                        <option>Varus</option>
+                        <option>Vayne</option>
+                        <option>Veigar</option>
+                        <option>Vel'Koz</option>
+                        <option>Vi</option>
+                        <option>Viktor</option>
+                        <option>Vladimir</option>
+                        <option>Volibear</option>
+                        <option>Warwick</option>
+                        <option>Wukong</option>
+                        <option>Xayah</option>
+                        <option>Xerath</option>
+                        <option>Xin Zhao</option>
+                        <option>Yasuo</option>
+                        <option>Yorick</option>
+                        <option>Zac</option>
+                        <option>Zed</option>
+                        <option>Ziggs</option>
+                        <option>Zilean</option>
+                        <option>Zoe</option>
+                        <option>Zyra</option>
+                    </select>
+                </div>
+                <label>Summarize the bug for us <span class="verplicht">*</span></label>
+                <input type="text" class="summarize">
+                <label>Any specifics you think we should know? <span class="verplicht">*</span></label>
+                <textarea class="specifics" placeholder="What I did that led up to the bug: &#x0a;1. &#x0a;2. &#x0a;3. &#x0a;&#x0a;Results:"></textarea>
+                <label> Any links you think would help?</label>
+                <input type="url" class="link">
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://twitter.com/riotgames"><div class="icon"><i class="fab fa-twitter"></i></div>Twitter</a>
+                <a href="https://www.facebook.com/RiotGames/"><div class="icon"><i class="fab fa-facebook"></i></div>Facebook</a>
+                <a href="https://www.youtube.com/riotgames"><div class="icon"><i class="fab fa-youtube"></i></div>Youtube</a>
+                <a href="https://eune.leagueoflegends.com/en/"><div class="icon"><i class="fab fa-chrome"></i></div>Official Site</a>
+            </div>
+            <p>
+                &copy; 2017 Riot Games, Inc. All rights reserved. Riot Games, League of Legends and PvP.net are trademarks, services marks, or 
+                registered trademarks of Riot Games, Inc.
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
