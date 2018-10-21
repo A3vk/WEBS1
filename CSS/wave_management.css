@@ -14,7 +14,7 @@ img {
     margin-left: 15%;
 }
 
-main {
+.tekst {
     width: 90%;
     margin: 0 auto;
 }
@@ -22,7 +22,7 @@ main {
 table {
     color: white;
     border-spacing: 0;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 th, td {
