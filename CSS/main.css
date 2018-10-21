@@ -199,6 +199,14 @@ footer p {
         padding-bottom: 50px;
     }
 
+    nav a:hover {
+        color: rgb(150, 127, 0);
+    }
+
+    nav ul li a:hover:after {
+        width: 100%;
+    }
+
     /* FOOTER */
     footer {
         font-size: 1vw;
