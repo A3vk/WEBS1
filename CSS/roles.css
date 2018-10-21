@@ -40,6 +40,11 @@ main p, main h3, main h2 {
 }
 
 @media screen and (min-width: 1024px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .uitleg {
         background-color: rgba(0, 0, 0 , 0.2);
     }
@@ -48,7 +53,7 @@ main p, main h3, main h2 {
     .champions {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 100px;
+        justify-content: space-around;
     }
 
     .champions h2 {
@@ -56,17 +61,21 @@ main p, main h3, main h2 {
     }
 
     .champions .card {
-        width: 20%;
+        width: 240px;
+        height: 340px;
         position: relative;
     }
 
     .card .tekst  {
+        margin: 0;
         position: absolute;
-        width: 70%;
+        width: 96%;
         height: 100%;
-        font-size: 0.8vw;
+        font-size: 0.7vw;
         opacity: 0;
         transition: opacity 1s;
+        text-align: center;
+        padding: 0 2%;
     }
 
     .champions .tekst:hover {
