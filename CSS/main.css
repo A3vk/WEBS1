@@ -199,6 +199,10 @@ footer p {
         padding-bottom: 50px;
     }
 
+    .roles {
+        margin-left: 25px;
+    }
+
     nav a:hover {
         color: rgb(150, 127, 0);
     }
